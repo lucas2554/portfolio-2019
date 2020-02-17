@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lucas - Gurgey</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+
+</head>
+<body class="accueil">
+
+<main id="accueil">
+
+
+<ul class="bc-accueil">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+    
+    <section>
+        <img class="moi" src="images/img-accueil.JPG" alt="">
+
+        <div class="intro">
+            <p>
+                Bonjour et Bienvenue sur mon <strong>portfolio</strong>,
+                <br>
+                Je m'appelle <strong>Lucas Gurgey</strong>, j'ai 19 ans,
+                <br>
+                Je suis actuellement étudiant au
+                <br>
+                <a href="">DUT MMI de Montbéliard</a>
+
+
+            </p>
+        </div>
+
+        <div class="discover">
+            <a class="discover" href="web.html">Discover</a>
+        </div>
+    </section>
+
+</main>
+
+<script>
+    $(document).ready(function () {
+
+
+        $('.moi').css({"transform": "translateX(-10%)", "opacity": "1"});
+        $('.intro').css({"transform": "translateX(0)", "opacity": "1"});
+        $('div.discover').css({"transform": "translateY(0)", "opacity": "1", "transition-delay": ".5s"});
+
+
+        $("a.discover").click(function (e) {
+
+            var link = $(this).attr("href");
+            setTimeout(function () {
+                window.location.href = link;
+            }, 2000);
+            e.preventDefault();
+
+            $('#accueil section').css({"opacity":"0","transition":".8s"});
+            $('.bc-accueil li').css({"transform":"rotate(0)"})
+
+
+        });
+
+
+        $(function() {
+
+            var windowWidth= $(window).width();
+            if(windowWidth < 420){
+                $('.moi').css({"transform": "translateX(0)", "opacity": "1"});
+                $('.intro').css({"transform": "translateX(-42%)", "opacity": "1"});
+                $('.bc-accueil').css({"width":"200%","left":"-30%","grid-templates-rows":"150vh"});
+
+
+            }
+
+        });
+
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Granite</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+
+    <meta name="viewport"
+          content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css"/>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body class="noScroll">
+<main id="detail-projet">
+
+    <h1>Le Granite</h1>
+    <div class="centre-img active granite">
+        <img src="../images/granite.jpg" alt="">
+        <p class="scroll projet" data-splitting>click here</p>
+
+    </div>
+    <div class="grille-text granite">
+        <div class="text">
+            <h2>Objectif :</h2>
+            <p>
+                Pour ce projet on devait créer une identité graphique pour un chalet de luxe aux alentours de Gerardmer.
+                Cette identité graphique comprenait un logo, des études concurrentielles, et une maquette de site web
+                pour ce dit chalet. L'objectif principal était de rendre un dossier, une charte graphique utilisable
+                pour le site web du chalet.
+
+            </p>
+        </div>
+        <div class="text">
+            <h2>Ce que je retiens :</h2>
+            <p>
+                C'est grâce à ce projet que j'ai appris à utiliser le logiciel Indesign de manière plus professionelle.
+                Il fallait être très attentif à la cohérence du dossier par rapport à notre identité graphique.
+
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="grille-img granite">
+        <img src="../images/logo-granite.png" style="background: white" alt="" class="lt granite">
+        <div></div>
+        <img src="../images/granite1.png" alt="" class="rt">
+        <img src="../images/granite2.png" alt="" class="lb">
+        <div></div>
+        <img src="../images/granite3.png" alt="" class="rb">
+
+    </div>
+
+    <div class="detail-role">
+        <ul class="">
+            <li>Rôle :&nbsp; Graphiste</li>
+            <li>Logiciel :&nbsp;
+                Adobe Illustrator&nbsp;
+                <span>/</span>&nbsp;
+                Adobe Indesign
+            </li>
+        </ul>
+    </div>
+
+    <ul class="bc-accueil granite projet">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $(".bc-accueil.projet li").css({"transform": "rotate(15deg)", "transition": "1s", "transition-delay": ".5s"});
+        setTimeout(function () {
+            $('h1').css({"opacity": "1", "transform": "translateY(0)"});
+            $('.text:first-child').css({"opacity": "1", "transform": "translateY(0)", "transition-delay": ".2s"});
+            $('.centre-img').css({"opacity": "1", "transform": "translateY(0)", "transition-delay": ".6s"});
+            $('.text:last-child').css({"opacity": "1", "transform": "translateY(0)", "transition-delay": ".4s"});
+            $('.detail-role').css({"opacity": "1", "transform": "translateY(0)", "transition-delay": ".8s"});
+        }, 1500);
+
+
+        $('.centre-img').click(function () {
+
+            if ($(this).hasClass("active")) {
+                $('.grille-img').css({"display": "grid"}).addClass("active");
+                $('.centre-img').removeClass("active");
+
+                setTimeout(function () {
+                    $('.grille-img').css({"opacity": "1"});
+
+                    $('.lt').css({"opacity": "1", "transform": "scale(1)"});
+                    $('.lb').css({"opacity": "1", "transform": "scale(1)", "transition-delay": ".3s"});
+                    $('.rt').css({"opacity": "1", "transform": "scale(1)", "transition-delay": ".1s"});
+                    $('.rb').css({"opacity": "1", "transform": "scale(1)", "transition-delay": ".2s"})
+
+                }, 10)
+            }
+
+
+            if ($('.grille-img').hasClass('active')) {
+                $('.lt,.lb,.rt,.rb').prop("disabled", true);
+
+                $('.grille-img').click(function () {
+                    $(this).css({"opacity": "0"}).removeClass("active");
+                    $('.centre-img').addClass("active");
+                    setTimeout(function () {
+                        $('.grille-img').css({"display": "none"})
+                    }, 500)
+                })
+            }
+        });
+
+        $(function() {
+
+            var windowWidth= $(window).width();
+            if(windowWidth < 420){
+                $('.bc-accueil').css({"width":"200%","left":"-30%","opacity":"0.2"});
+                $('body').css({"overflow-y":"initial","overflow-x":"hidden"})
+
+
+            }
+
+        });
+
+        Splitting();
+
+
+    });
+
+
+</script>
+</body>
+</html>

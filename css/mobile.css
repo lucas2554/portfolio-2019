@@ -1,0 +1,263 @@
+@media screen and (max-width: 420px) {
+
+    #accueil img.moi {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    #accueil .intro {
+        top: 0;
+        width: 120%;
+        font-size: 0.7em;
+        margin-top: 20%;
+        text-align: center;
+
+    }
+
+    #accueil a.discover {
+        margin-top: 20%;
+        width: 100%;
+    }
+
+    #projet-web h1 {
+        display: none;
+    }
+
+    div.colonne {
+        width: 12%;
+    }
+
+    #projet-web .intro h2 {
+        width: 100%;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    #projet-web .intro p {
+        font-size: 1em;
+        margin-left: 35%;
+    }
+
+    #projet-web .intro p:last-of-type {
+        font-size: 1em;
+    }
+
+    #projet-web aside ul {
+        margin-left: -10%;
+    }
+
+    #projet-web aside li {
+        width: 80%;
+    }
+
+    p.scroll {
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #projet-web h2.titre {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 6vh;
+        font-size: 1.8em;
+        width: 100%;
+    }
+
+    .section-projet {
+        width: 150%;
+        margin-top: 20vh;
+    }
+
+    #projet-web p.text {
+        width: 70%;
+        margin-top: -10vh;
+    }
+
+    #projet-web .fond {
+        height: 30vw;
+    }
+
+    #projet-web .fond.box-appli {
+        height: 30vw;
+    }
+
+    #projet-web h3 {
+        margin-left: auto;
+    }
+
+    /*pour les pages de projets*/
+    #detail-projet h1 {
+        font-size: 1.5em;
+    }
+
+    #detail-projet .grille-text {
+        display: block;
+    }
+
+    .grille-text .text p {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    #detail-projet .text {
+        width: 100%;
+        margin-top: 15vh;
+    }
+
+    #detail-projet .text:last-child {
+        text-align: left;
+        margin-left: 10vw;
+        margin-top: 10vw;
+
+    }
+
+    #detail-projet .detail-role {
+        position: relative;
+        top: 50vh;
+
+    }
+
+    .detail-role ul {
+        display: block;
+    }
+
+    #detail-projet .centre-img {
+        position: relative;
+        top: 70vh;
+        width: 70%;
+        margin-top: 8vh;
+
+    }
+
+    .grille-img {
+        height: 125vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 25vh 0 25vh 25vh 0 25vh;
+
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #detail-projet img {
+        opacity: 1;
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lb, .lt {
+        margin-left: 0;
+
+    }
+
+    .lt {
+        margin-top: -5vh;
+
+    }
+
+    .lb {
+        margin-top: -10vh;
+        transition-delay: .2s;
+
+    }
+
+    .rb {
+        margin-top: -15vh;
+        transition-delay: .3s;
+
+    }
+
+    .rt {
+        margin-top: -10vh;
+        transition-delay: .1s;
+    }
+
+    #detail-projet .centre-img img {
+
+    }
+
+    ul.bc-accueil {
+        grid-template-rows: 150vh;
+    }
+
+    ul.bc-accueil.box-appli {
+        grid-template-rows: 190vh;
+
+    }
+
+    #detail-projet .detail-role.box-appli {
+        top: 80vh;
+    }
+
+    #detail-projet .centre-img.box-appli {
+        margin-top: 25vh;
+        height: 50vh;
+    }
+
+    #detail-projet .centre-img.box-appli img {
+        height: 100%;
+    }
+
+    .detail-role ul li {
+        font-size: 1em;
+    }
+
+    .grille-img.box-appli {
+        grid-template-columns: 50%;
+        grid-template-rows: 50vh 50vh 50vh;
+        padding: 25%;
+        height: 153vh;
+    }
+
+    #detail-projet .centre-img.boss {
+        top: 95vh;
+
+    }
+
+    #detail-projet .detail-role.boss {
+        top: 75vh;
+    }
+
+    .grille-img.boss {
+        height: 142vh;
+
+    }
+
+    #detail-projet ul.bc-accueil.boss {
+        grid-template-rows: 165vh;
+    }
+
+    .lt.granite {
+        margin-top: 3vh;
+    }
+
+    #detail-projet .centre-img.granite {
+        top: 75vh;
+    }
+
+    p.scroll {
+        top: 60vw;
+    }
+
+    @media screen and (max-height: 740px ) {
+
+        #projet-web aside ul {
+            margin-left: -10%;
+            margin-top: -2vh;
+        }
+
+    }
+
+    @media screen and (max-height: 736px ) {
+
+        #projet-web aside ul {
+            margin-left: -10%;
+            margin-top: 2vh;
+        }
+
+    }
+}
+

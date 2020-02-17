@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes Projets</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <meta name="viewport"
+          content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css"/>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+
+<main id="projet-web">
+    <div class="colonne">
+        <h1>projets</h1>
+
+    </div>
+    <aside>
+        <ul>
+            <a href="https://www.linkedin.com/in/lucas-gurgey-00b286154/">
+                <li><i class="fab fa-linkedin-in"></i></li>
+            </a>
+
+            <a href="mailto:lucas.gurgey@orange.fr">
+                <li><i class="fas fa-envelope"></i></li>
+            </a>
+
+            <a href="pdf/cv.pdf">
+                <li>CV</li>
+            </a>
+        </ul>
+    </aside>
+
+    <section id="first" class="scrollable-section" data-section-name="home">
+
+        <div class="intro">
+            <h2>Mes Projets</h2>
+            <p>Pendant mes années d’études, j’ai eu l’occasion de travailler sur de nombreux projets, du <strong>
+                web </strong> jusqu’au
+                <strong> print </strong> en passant par le <strong> graphisme</strong>, j’ai su me diversifier dans ces
+                3 domaines.</p>
+            <p>
+                Sur ce site vous pouvez découvrir la pluparts des projets que j'ai réalisé durant mes 2 annèes de
+                DUT.
+                <br/>
+                <span> Jusqu'à aujourd'hui...</span> <span class="bar">|</span>
+            </p>
+        </div>
+
+        <p class="scroll" data-splitting>scroll-down</p>
+    </section>
+    <section id="second" class="scrollable-section" data-section-name="boxolidaire">
+        <h2 class="titre">Boxolidaire - Landing Page</h2>
+
+
+        <div class="section-projet">
+            <div class="container-img">
+                <img class="box " src="images/boxolidaire.png" alt="">
+                <div class="fond box-appli"></div>
+            </div>
+        </div>
+
+
+        <p class="text">Boxolidaire est une application qui vous permet de recycler les objets dont vous n'avez plus
+            besoins en les donnant aux personnes les plus démunies.</p>
+
+        <h3 class="button"><a href="projet/box-landing-page.html">Voir Plus</a></h3>
+
+
+    </section>
+    <section id="third" class="scrollable-section" data-section-name="boxolidaire-application">
+        <h2 class="titre">Boxolidaire - Application</h2>
+
+
+        <div class="section-projet">
+            <div class="container-img">
+                <img class="box" src="images/box-appli.png" alt="">
+                <div class="fond" style="height: 18vw"></div>
+            </div>
+        </div>
+        <p class="text">
+            Voici la deuxième partie du projet. Cette fois, l'application est dynamique et utilise le principe de
+            l'injection de template (SPA - Single Page Action)
+        </p>
+
+        <h3 class="button"><a href="projet/box-appli.html">Voir Plus</a></h3>
+
+    </section>
+    <section id="fourth" class="scrollable-section" data-section-name="boss">
+        <h2 class="titre">Le BOSS</h2>
+
+
+        <div class="section-projet">
+            <div class="container-img">
+                <img class="box" src="images/boss.png" alt="">
+                <div class="fond"></div>
+            </div>
+        </div>
+
+
+        <p class="text">Le BOSS est un examen incontournable de la formation MMI de Montbéliard,
+            chaque fin de semestre on nous laisse 2 jours pour créer un site de A à Z sur un thème donné.
+        </p>
+
+        <h3 class="button"><a href="projet/boss.html">Voir Plus</a></h3>
+    </section>
+    <section id="fifth" class="scrollable-section" data-section-name="portrait">
+        <h2 class="titre">Les portaits</h2>
+
+
+        <div class="section-projet">
+            <div class="container-img">
+                <img class="box" src="images/portrait.png" alt="">
+                <div class="fond"></div>
+            </div>
+        </div>
+
+
+        <p class="text">
+            Ce projet met en pratique notre créativité et nos compétence en intégration. C'est un mini site dans lequel
+            on peut retrouver le portrait de nos camarades de TP.
+            <br><br><br><br>
+
+
+        </p>
+
+        <h3 class="button"><a href="projet/portrait.html">Voir Plus</a></h3>
+    </section>
+    <section id="sixth" class="scrollable-section" data-section-name="granite">
+        <h2 class="titre">Le Granite</h2>
+
+
+        <div class="section-projet">
+            <div class="container-img">
+                <img class="box" src="images/granite.png" alt="">
+                <div class="fond"></div>
+            </div>
+        </div>
+
+
+        <p class="text">
+            Le Granite est un challet de luxe situé aux alentour de la ville de Gerardmer. Ce projet avait pour but de
+            créer un logo pour ce challet et de le présenter dans une charte graphique.
+        </p>
+
+        <h3 class="button"><a href="projet/granite.html">Voir Plus</a></h3>
+    </section>
+
+</main>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="script/jquery.scrollify.js"></script>
+<script>
+
+
+    $(document).ready(function () {
+
+        $(function () {
+            $('.intro h2').css({"transform": "translateX(10%)", "opacity": "1", "transition-delay": ".2s"});
+            $('.intro p:first-of-type').css({
+                "transform": "translateX(10%)",
+                "opacity": "1",
+                "transition-delay": ".4s"
+            });
+            $('.intro p:last-of-type').css({"transform": "translateX(10%)", "opacity": "1", "transition-delay": ".6s"});
+
+            $('.colonne').css({"opacity": "1", "transition": ".6s"})
+
+        });
+
+
+        $("h3.button> a").click(function (e) {
+
+            var link = $(this).attr("href");
+            setTimeout(function () {
+                window.location.href = link;
+            },500);
+            e.preventDefault();
+
+            $("section").css({"opacity":"0","transition":".5s"})
+
+
+
+        });
+
+
+        $(function () {
+
+
+            $.scrollify({
+                section: "section",
+                sectionName: "section-name",
+                interstitialSection: "",
+                easing: "easeOutExpo",
+                scrollSpeed: 1100,
+                offset: 0,
+                scrollbars: false,
+                standardScrollElements: "",
+                setHeights: true,
+                overflowScroll: true,
+                updateHash: true,
+                touchScroll: true,
+                before: function () {
+                },
+                after: function () {
+
+                    if ($.scrollify.current().attr('data-section-name') == "boxolidaire") {
+
+                        $('#second .titre').css({"transform": "translateY(-5vh)", "opacity": "1"});
+                        $('#second .container-img').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".3s"
+                        });
+                        $('#second .text').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".4s"
+                        });
+                        $('#second .button').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".6s"
+                        });
+
+                        setTimeout(function () {
+                            $('#second .box').css({"transform": "translate(-5px,5px)", "transition": "1s"});
+                            $('#second .fond').css({"transform": "translate(10px,-110%)", "transition": "1s"})
+
+                        }, 500);
+                    }
+
+                    if ($.scrollify.current().attr('data-section-name') == "boxolidaire-application") {
+
+                        $('#third .titre').css({"transform": "translateY(-5vh)", "opacity": "1"});
+                        $('#third .container-img').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".3s"
+                        });
+                        $('#third .text').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".4s"
+                        });
+                        $('#third .button').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".6s"
+                        });
+
+                        setTimeout(function () {
+                            $('#third .box').css({"transform": "translate(-5px,5px)", "transition": "1s"});
+                            $('#third .fond').css({"transform": "translate(10px,-110%)", "transition": "1s"})
+
+                        }, 1000);
+                    }
+
+                    if ($.scrollify.current().attr('data-section-name') == "boss") {
+
+                        $('#fourth .titre').css({"transform": "translateY(-5vh)", "opacity": "1"});
+                        $('#fourth .container-img').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".3s"
+                        });
+                        $('#fourth .text').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".4s"
+                        });
+                        $('#fourth .button').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".6s"
+                        });
+
+                        setTimeout(function () {
+                            $('#fourth .box').css({"transform": "translate(-5px,5px)", "transition": "1s"});
+                            $('#fourth .fond').css({"transform": "translate(10px,-110%)", "transition": "1s"})
+
+                        }, 1000);
+                    }
+
+                    if ($.scrollify.current().attr('data-section-name') == "portrait") {
+
+                        $('#fifth .titre').css({"transform": "translateY(-5vh)", "opacity": "1"});
+                        $('#fifth .container-img').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".3s"
+                        });
+                        $('#fifth .text').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".4s"
+                        });
+                        $('#fifth .button').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".6s"
+                        });
+
+                        setTimeout(function () {
+                            $('#fifth .box').css({"transform": "translate(-5px,5px)", "transition": "1s"});
+                            $('#fifth .fond').css({"transform": "translate(10px,-110%)", "transition": "1s"})
+
+                        }, 1000);
+                    }
+
+                    if ($.scrollify.current().attr('data-section-name') == "granite") {
+
+                        $('#sixth .titre').css({"transform": "translateY(-5vh)", "opacity": "1"});
+                        $('#sixth .container-img').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".3s"
+                        });
+                        $('#sixth .text').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".4s"
+                        });
+                        $('#sixth .button').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".6s"
+                        });
+
+                        setTimeout(function () {
+                            $('#sixth .box').css({"transform": "translate(-5px,5px)", "transition": "1s"});
+                            $('#sixth .fond').css({"transform": "translate(10px,-110%)", "transition": "1s"})
+
+                        }, 1000);
+                    }
+
+                    if ($.scrollify.current().attr('data-section-name') == "logo") {
+
+                        $('#seventh .titre').css({"transform": "translateY(-5vh)", "opacity": "1"});
+                        $('#seventh .container-img').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".3s"
+                        });
+                        $('#seventh .text').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".4s"
+                        });
+                        $('#seventh .button').css({
+                            "transform": "translateY(-5vh)",
+                            "opacity": "1",
+                            "transition-delay": ".6s"
+                        });
+
+                        setTimeout(function () {
+                            $('#seventh .box').css({"transform": "translate(-5px,5px)", "transition": "1s"});
+                            $('#seventh .fond').css({"transform": "translate(10px,-110%)", "transition": "1s"})
+
+                        }, 1000);
+                    }
+
+                }
+
+
+            });
+        });
+
+
+
+        Splitting();
+
+
+    });
+
+
+</script>
+
+</body>
+</html>
