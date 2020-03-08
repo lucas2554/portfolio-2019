@@ -106,6 +106,10 @@ strong {
     color: #474747;
 }
 
+.audio{
+    text-align: right;
+}
+
 #accueil section {
     width: 100%;
     height: 100vh;
@@ -324,6 +328,56 @@ section {
     transform: scale(1.2);
     transition: .5s;
 }
+
+main#about .colonne{
+    width: 5%;
+    height: 720vh;
+    position: absolute;
+    left: 12vw;
+    z-index: 0;
+    background: linear-gradient(to bottom, #ea9999, #fec051, #FEE140, #FA709A);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+main#about h1{
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    font-size: 5.8vw;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.5em;
+    width: 100vh;
+    text-align: center;
+    color: #474747;
+
+    position: absolute;
+    top: 40vh;
+    right: -20vw;
+}
+
+main#about .intro h2{
+    width: 50%;
+    display: block;
+    margin-left: 15%;
+    margin-right: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #474747;
+    font-size: 3em;
+    transition: .8s;
+}
+
+main#about .intro p{
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5em;
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+    width: 60%;
+    transition: .8s;
+} 
 
 div.colonne {
     width: 5%;
